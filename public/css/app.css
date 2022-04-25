@@ -1,0 +1,172 @@
+/* =================== register ===================== */
+/* ================================================== */
+.regBack{
+	min-height: 100vh !important;
+	background-image: url("../assets/welcomeBackground//back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+.register-greeting{
+	text-align: center;
+}
+.register-form{
+	border-radius: 5px;
+	border: 1px black solid;
+	padding: 35px 40px 0px 40px;
+	margin: 10px 0 0 0 !important;
+	text-align: center;
+}
+.register-form > input{
+	margin: 5px 0px;
+}
+.register-form > select{
+	margin: 5px 0px 15px 0px;
+}
+.register-form > p{
+	margin: 15px 0px;	
+	font-size: 14px; 
+	text-align: right;
+}
+label{
+	padding: 0px !important;
+	margin: 0px !important;
+	color: red;
+}
+
+/* ===================== login ===================== */
+/* ================================================= */
+.logBack{
+	min-height: 100vh !important;
+	background-image: url("../assets/welcomeBackground//back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+.login-greeting{
+        text-align: center;
+    }
+    .login-form{
+        border-radius: 5px;
+        border: 1px black solid;
+        padding: 35px 40px 0px 40px;
+        margin: 100px 0 0 0 !important;
+    }
+    .login-form > input{
+        margin: 15px 0px;
+    }
+    .login-form > p{
+        margin: 15px 0px;	
+        font-size: 14px; 
+        text-align: right;
+    }
+	.logMsg{
+		text-align: center !important; 
+	}
+
+/* ================ Admin Dashboard ================ */
+/* ================================================= */
+.create-admin-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 20px 30px 20px; 
+	border: 1px black solid;
+	border-radius: 5px;	
+}
+.inputs{
+	margin: 5px 0px 5px 0px;
+}
+.form-check-label{
+    color: black;
+    margin-right: 5px !important;
+}
+.head{
+    margin-top: 10px;
+    margin-bottom: 0;    
+    text-align: center;
+}
+.columns{
+	padding: 1px;
+	border: 1px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ================ User Dashboard ================ */
+/* ================================================ */
+.products-row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.products-items{
+    position: relative !important;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px  black solid;
+}
+.pic{
+    border-bottom: 1px black solid;
+}
+.pic-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    height: 50px;
+}
+.desc{
+    height: 75px;
+}
+.colors{
+    height: 40px;
+}
+.price{
+    height: 25px;
+}
+.price-call{
+    text-align: right;
+}
+.headings{
+    color: green;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages{
+    font-weight: bold;
+}
+
+/* ================ Guest Dashboard ================ */
+/* ================================================= */
+.search-btn{
+    text-align: right;
+}
+
+/* ================ all =============== */
+/* ==================================== */
+.add-to-cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.add-to-cart-btn{
+    font-size: 12px !important;
+    opacity: 0.9;
+    height: 40px;
+    width: 90px;
+}
+.count{
+    height: 40px;
+    width: 80px;
+}
