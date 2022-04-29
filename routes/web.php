@@ -6,6 +6,7 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\SignController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,10 +42,12 @@ Route::group(['middleware'=>'auth', 'verify'], function(){
     Route::get('/show-delete/{id}', [AdminController::class, 'deleteProduct']);
         // User
     Route::get('/user-dashboard', [UserController::class, 'userShowDash']);
-    Route::post('/user-searh-pcroduct', [UserController::class, 'search']);
+    Route::post('/user-search-product', [UserController::class, 'search']);
     Route::get('/add-to-cart/{id}', [UserController::class, 'addToCart']);
     Route::get('/cart', [UserController::class, 'showCart']);
     Route::get('/remove-from-cart/{name}', [UserController::class, 'removeFromCart']);
+    Route::get('/buy-product', [PaymentController::class, 'showPayment']);
+    Route::POST('/buy-products', [PaymentController::class, 'buyProducts']);
         // both
     Route::get('/log-out', [SignController::class, 'logOut']);
 });

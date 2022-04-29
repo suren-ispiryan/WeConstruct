@@ -33,7 +33,7 @@ class UserController extends Controller
             return view("userSearchDashboard")->with('products', $products);
         }else{
             $products = Product::paginate(6);
-            return view("userDashboard")->with('products', $products);
+            return redirect("/user-dashboard");
         }
     }
 

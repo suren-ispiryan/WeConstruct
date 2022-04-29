@@ -101,6 +101,9 @@ label{
 
 /* ================ User Dashboard ================ */
 /* ================================================ */
+.center-btns{
+    text-align: center;
+}
 .products-row{
     flex-wrap: wrap;
     display: flex;
@@ -145,6 +148,16 @@ label{
 }
 .pages{
     font-weight: bold;
+}
+
+/* ================== user payment ================== */
+/* ================================================== */
+.payment-details{
+    text-align: center;
+    color: green;
+}
+.btn-buy{
+    text-align: center;
 }
 
 /* ================ Guest Dashboard ================ */

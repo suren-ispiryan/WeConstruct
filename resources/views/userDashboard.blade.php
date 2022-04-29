@@ -30,10 +30,18 @@
     <body>
         <div class="container-fluid mt-2">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     Welcome {{ Auth::user()->name }}
                 </div>
 
+                <div class="col-md-3">
+                    @if (session('payment_success') !== NULL)
+                       <h6 class="text-success">
+                           {{ session('payment_success') }}
+                       </h6>
+                    @endif
+                </div>
+                
                 <div class="col-md-5">
                     <form action="/cart" method="GET">
                         <button class="btn btn-warning">My cart</button>
