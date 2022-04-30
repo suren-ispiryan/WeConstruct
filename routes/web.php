@@ -40,6 +40,7 @@ Route::group(['middleware'=>'auth', 'verify'], function(){
     Route::get('/show-update/{id}', [AdminController::class, 'showUpdate']);
     Route::post('/admin-update-product/{id}', [AdminController::class, 'updateProduct']);
     Route::get('/show-delete/{id}', [AdminController::class, 'deleteProduct']);
+    Route::get('/sold-products', [AdminController::class, 'showSoldProducts']);
         // User
     Route::get('/user-dashboard', [UserController::class, 'userShowDash']);
     Route::post('/user-search-product', [UserController::class, 'search']);

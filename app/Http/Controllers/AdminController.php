@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 // Models
 use App\Models\Product;
+use App\Models\SoldProduct;
 // Facades
 use Carbon\Carbon;
 
@@ -78,5 +79,11 @@ class AdminController extends Controller
         $file_path = public_path().'/assets/productImages/'.$prod->image;
         unlink($file_path);
         return redirect('/admin-dashboard');
+    }
+
+    public function showSoldProducts(){
+        $soldProductsList = SoldProduct::paginate(20);
+
+        return view('adminSoldProducts')->with('soldProductsList', $soldProductsList);
     }
 }

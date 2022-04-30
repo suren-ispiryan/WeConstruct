@@ -183,3 +183,17 @@ label{
     height: 40px;
     width: 80px;
 }
+
+/* ================ AdminSoldProducts ================ */
+/* =================================================== */
+.cols{
+    padding: 5px 0px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-sold{
+    margin-top: 10px;
+    text-align: center;
+}

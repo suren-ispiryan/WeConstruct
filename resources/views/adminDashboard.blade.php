@@ -30,11 +30,15 @@
     <body>
         <div class="container-fluid mt-2">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     Welcome {{ Auth::user()->name }}
                 </div>
 
-                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                    <form action="/sold-products" method="GET">
+                        <button class="btn btn-primary">Sold products</button>
+                    </form>
+                </div>
 
                 <div class="col-md-2">
                     <form action="/log-out" method="GET">
